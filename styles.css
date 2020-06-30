@@ -64,7 +64,6 @@ table {
     justify-content: center;
     align-items: center;
     line-height: 200%;
-        
 }
 
 .hero > * {
@@ -72,10 +71,12 @@ table {
 }
 
 .hero img {
+    margin: 0;
     position: absolute;
     display: block;
     width: 100%;
     bottom: 0px;
+    left: 0;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
