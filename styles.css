@@ -55,7 +55,7 @@ table {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 68%;
+    height: 77%;
     color: white;
     overflow: hidden;
     font: 18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
@@ -64,28 +64,25 @@ table {
     justify-content: center;
     align-items: center;
     line-height: 200%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .hero > * {
-    margin: 10px;
+    margin: 3px;
 }
 
 .hero img {
-    margin: 0;
     position: absolute;
-    display: block;
-    width: 100%;
-    bottom: 0px;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-width: 100%;
+    top: -290px;
+    background-position: bottom;
     z-index: -1;
 }
 
 .hero h1 {
     font-size: 3em;
     font-weight: normal;
-    /* line-height: 36px; */
     text-align: center;
 }
 
@@ -93,19 +90,48 @@ table {
 
 nav {
     position: absolute;
-    top: 0;
+    top: 100px;
     margin: 0 auto;
-    width: 75%;
-    background: grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    color: white;
 }
+
+nav button {
+    width: 102px;
+    height: 36px;
+    border: 1px solid black;
+    color: white;
+    background: linear-gradient(
+        rgb(153, 149, 149) 0%,
+        rgb(110, 110, 110) 45%,
+        rgb(80, 80, 80) 50%,
+        rgb(120, 120, 120) 98%
+      );
+      border-radius: 3px;
+      box-shadow: 0.5px 0.5px 1px 0.2px rgb(58, 57, 57);
+}
+
+button:hover {
+    /* background: rgba(0,0,0,0.4); */
+    background-color: grey;
+    
+}
+
+nav img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Promotion images */
 
 .promos {
     width: 100%;
     padding: 0;
-    margin: 1px auto;
     display: flex;
     justify-content: center;
-    /* justify-content: end; */
     overflow: hidden;
 
 }
@@ -121,10 +147,11 @@ nav {
 /* footer */
 
 footer {
-    position: absolute;
-    height: 90px;
+    /* position: absolute; */
+    height: 50px;
     width: 100%;
     bottom: 0;
+    /* padding-top: 30px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
